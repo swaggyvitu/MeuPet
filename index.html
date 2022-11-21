@@ -33,11 +33,80 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#">Clientes</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item"  data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <a class="nav-link" href="#">Sobre</a>
                   </li>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Projeto PET</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <h3 class=" text-center">Projeto social para cuidados com animais</h3>
+                          <h5 class=" text-center">Atividade desenvolvida no curso técnico de informática - Senac</h5>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium assumenda provident ipsa id a accusamus unde praesentium adipisci voluptates laborum aliquid alias, odio enim consectetur aut rem commodi. Dignissimos.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <li class="nav-item"  data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    <a class="nav-link" href="#">Fale Conosco</a>
+                  </li>
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                      <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <section class="container">
+                              <form action="" class="form needs-validation" novalidate>
+                                  <div>
+                                      <label class="form-label mt-3" for="">Nome:</label>
+                                      <input class="form-control" type="text" name="nome" id="" required>
+                                      <div class="valid-feedback">
+                                          Nome preenchido com sucesso!
+                                      </div>
+                                      <div class="invalid-feedback">
+                                          Preencha o nome, por favor!
+                                      </div>
+                                  </div>
+                                  <div>
+                                      <label class="form-label mt-3" for="">E-mail:</label>
+                                      <input class="form-control" type="email" name="email" id="" required>
+                                      <div class="valid-feedback">
+                                          E-mail preenchido com sucesso!
+                                      </div>
+                                      <div class="invalid-feedback">
+                                          Preencha o nome, por favor!
+                                      </div>
+                                  </div>
+                                  <div>
+                                      <label class="form-label mt-3" for="">Mensagem:</label>
+                                      <textarea class="form-control" name="" id="" cols="30" rows="10" required></textarea>
+                                      <div class="valid-feedback">
+                                          Mensagem preenchida com sucesso!
+                                      </div>
+                                      <div class="invalid-feedback">
+                                          Preencha a mensagem, por favor!
+                                      </div>
+                                  </div>
+                                  <input class="d-block mt-3 btn btn-primary" type="submit" value="Enviar">
+                              </form>
+                          </section>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+
               </div>
-            </div>
           </nav>
     </header>
 
@@ -103,9 +172,9 @@
         <section class="container">
             <div class="accordion" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item">
-                  <h2 class="accordion-header " id="panelsStayOpen-headingOne">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                     <button class="accordion-button text-success" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                    Vacinas
+                      Vacina
                     </button>
                   </h2>
                   <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
